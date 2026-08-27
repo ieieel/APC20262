@@ -1,0 +1,23 @@
+INIT INP
+     STA ELEMENTO
+
+TEST1 LDA ELEMENTO
+      SUB MENOSUM 
+      BRZ FIM
+
+TEST2 LDA NUMDIG 
+      ADD UM
+      STA NUMDIG
+      
+      INP
+      STA ELEMENTO
+      BRA TEST1
+ 
+FIM   LDA NUMDIG
+      OUT 
+      HLT
+
+ELEMENTO DAT 0
+NUMDIG DAT 0
+MENOSUM DAT -1          
+UM DAT 1    
