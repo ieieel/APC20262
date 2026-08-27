@@ -1,0 +1,22 @@
+INIT INP
+     STA ELEMENTO
+
+TEST1 LDA ELEMENTO
+      SUB ZERO 
+      BRZ FIM
+
+TEST2 LDA SOMA 
+      ADD ELEMENTO
+      STA SOMA
+      
+      INP
+      STA ELEMENTO
+      BRA TEST1
+ 
+FIM   LDA SOMA
+      OUT 
+      HLT
+
+SOMA DAT 0
+ELEMENTO DAT
+ZERO DAT 0      
