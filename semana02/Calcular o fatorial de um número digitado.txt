@@ -1,46 +1,41 @@
 INP
-        STA N          // N = número digitado
+        STA N
 
         LDA UM
-        STA FAT        // FAT = 1
+        STA FAT
 
-LOOP:
-        LDA N
-        BRZ FIM        // se N = 0, termina
+LOOP    LDA N
+        BRZ FIM
 
-        // Preparar multiplicação FAT × N
         LDA ZERO
-        STA RES        // RES = 0
+        STA RES
 
         LDA N
-        STA CONT       // CONT = N
+        STA CONT
 
-MULT:
-        LDA CONT
-        BRZ MULT_FIM   // se CONT = 0, terminou
+MULT    LDA CONT
+        BRZ FIMMULT
 
         LDA RES
         ADD FAT
-        STA RES        // RES = RES + FAT
+        STA RES
 
         LDA CONT
         SUB UM
-        STA CONT       // CONT--
+        STA CONT
 
         BRA MULT
 
-MULT_FIM:
-        LDA RES
-        STA FAT        // FAT = FAT × N
+FIMMULT LDA RES
+        STA FAT
 
         LDA N
         SUB UM
-        STA N          // N--
+        STA N
 
         BRA LOOP
 
-FIM:
-        LDA FAT
+FIM     LDA FAT
         OUT
         HLT
 
