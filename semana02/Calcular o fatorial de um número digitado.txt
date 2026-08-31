@@ -7,26 +7,29 @@ INP
 LOOP    LDA N
         BRZ FIM
 
+        LDA FAT
+        STA VALOR
+
         LDA ZERO
         STA RES
 
         LDA N
         STA CONT
 
-MULT    LDA CONT
-        BRZ FIMMULT
+SOMA    LDA CONT
+        BRZ TROCA
 
         LDA RES
-        ADD FAT
+        ADD VALOR
         STA RES
 
         LDA CONT
         SUB UM
         STA CONT
 
-        BRA MULT
+        BRA SOMA
 
-FIMMULT LDA RES
+TROCA   LDA RES
         STA FAT
 
         LDA N
@@ -41,11 +44,11 @@ FIM     LDA FAT
 
 N       DAT 0
 FAT     DAT 0
+VALOR   DAT 0
 RES     DAT 0
 CONT    DAT 0
 UM      DAT 1
 ZERO    DAT 0
-
 o usuário vai digitar um número que o programa vai receber pelo comando INP. Esse valor é armazenado na variável N.
 Como o lmc não possui multiplicação o resultado é calculado por somas repetidas (4x4= 4+4+4+4). A variável FAT armazena o resultado parcial, enquanto RES e CONT auxiliam na realização das multiplicações.
 Após o cálculo, o resultado armazenado em FAT é exibido ao usuário através do comando OUT.
