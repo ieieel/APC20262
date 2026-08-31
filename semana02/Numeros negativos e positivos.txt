@@ -1,0 +1,39 @@
+LDA ZERO
+        STA POS
+
+        LDA ZERO
+        STA NEG
+
+LER     INP
+        BRZ FIM
+        BRP POSITIVO
+
+        LDA NEG
+        ADD UM
+        STA NEG
+        BRA LER
+
+POSITIVO LDA POS
+        ADD UM
+        STA POS
+        BRA LER
+
+FIM     LDA POS
+        OUT
+        LDA NEG
+        OUT
+        HLT
+
+POS     DAT 0
+NEG     DAT 0
+UM      DAT 1
+ZERO    DAT 0
+
+Nesse programa o usuário vai digitar numero aleatórios sendo negativos ou positivos até ele digitar 0.
+Depois cada número é verificado. Se for positivo, o contador POS é aumentado e se for negativo, o contador NEG vai ser aumentado.
+
+Saída: ao receber 0, o programa exibe a quantidade de números positivos e, em seguida, a quantidade de números negativos.
+
+Exemplo:
+Entrada: 5, -3, 8, -2, 4, 0
+Saída: 3 positivos e 2 negativos.
