@@ -1,0 +1,57 @@
+INP
+        STA N          // N = número digitado
+
+        LDA UM
+        STA FAT        // FAT = 1
+
+LOOP:
+        LDA N
+        BRZ FIM        // se N = 0, termina
+
+        // Preparar multiplicação FAT × N
+        LDA ZERO
+        STA RES        // RES = 0
+
+        LDA N
+        STA CONT       // CONT = N
+
+MULT:
+        LDA CONT
+        BRZ MULT_FIM   // se CONT = 0, terminou
+
+        LDA RES
+        ADD FAT
+        STA RES        // RES = RES + FAT
+
+        LDA CONT
+        SUB UM
+        STA CONT       // CONT--
+
+        BRA MULT
+
+MULT_FIM:
+        LDA RES
+        STA FAT        // FAT = FAT × N
+
+        LDA N
+        SUB UM
+        STA N          // N--
+
+        BRA LOOP
+
+FIM:
+        LDA FAT
+        OUT
+        HLT
+
+N       DAT 0
+FAT     DAT 0
+RES     DAT 0
+CONT    DAT 0
+UM      DAT 1
+ZERO    DAT 0
+
+o usuário vai digitar um número que o programa vai receber pelo comando INP. Esse valor é armazenado na variável N.
+Como o lmc não possui multiplicação o resultado é calculado por somas repetidas (4x4= 4+4+4+4). A variável FAT armazena o resultado parcial, enquanto RES e CONT auxiliam na realização das multiplicações.
+Após o cálculo, o resultado armazenado em FAT é exibido ao usuário através do comando OUT.
+Entrada: 4 → Processamento: 4 × 3 × 2 × 1 → Saída: 24.
