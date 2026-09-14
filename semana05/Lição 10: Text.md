@@ -18,7 +18,7 @@ dinosaur.setAnimation("pterodactyl");
   drawSprites();
 }
 
-Na avaliação da lição 9 foi pedido que usando a função de condição mudasse a animação quando o sprite atingisse certo ponto na tela.
+Na avaliação da lição 10 foi pedido que usando a função de condição mudasse a animação quando o sprite atingisse certo ponto na tela.
 
 #Desafio
 //
@@ -124,4 +124,4 @@ function draw() {
   drawSprites();
 }
 
-Na primeira parte do desafio da lição 9 foi pedido que utilizando a função de condição e a visibilidade dos sprites alterássemos a animação, já na segunda parte foi uma animação livre.  
+Na primeira parte do desafio da lição 10 foi pedido que utilizando a função de condição e a visibilidade dos sprites alterássemos a animação, já na segunda parte foi uma animação livre.  
