@@ -1,1 +1,2 @@
-
+Na semana 5 fiz as lições de 07 a 12, aprendendo como implementar textos mudando tamanho das letras, contornos, fontes, cores, a usar o draw loop para fazer animações e movimentar os sprites dentro do draw loop. 
+Certamente as lições mais difíceis para mim foram as lições 9 e 12 pois no primeiro momento achei o uso das condicionais meio confuso, mas deu sim para aprender, já o uso do mouse input ainda não foi 100% absorvido. O keyboard input já achei mais tranquilo de implementar. 
