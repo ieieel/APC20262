@@ -1,5 +1,7 @@
 #Avaliação
-//var backdrop = createSprite(200,200);
+//
+``` javascript
+var backdrop = createSprite(200,200);
 backdrop.setAnimation("sci_fi");
 var dinosaur = createSprite(200, 350);
 dinosaur.scale = 0.2;
@@ -17,12 +19,13 @@ dinosaur.setAnimation("pterodactyl");
   //draw everything
   drawSprites();
 }
-
+```
 Na avaliação da lição 10 foi pedido que usando a função de condição mudasse a animação quando o sprite atingisse certo ponto na tela.
 
 #Desafio
 //
 1º
+``` javascript
 var balloon = createSprite(200, 200);
 var pop= createSprite(200,200);
 balloon.setAnimation("balloon");
@@ -42,8 +45,9 @@ if (balloon.scale > 0.5) {
   // Draw Animations
   drawSprites();
 }
-
+```
 2º 
+``` javascript
 var peixe1 = createSprite(100, 150);
 var peixe2 = createSprite(300, 250);
 var tartaruga = createSprite(200, 330);
@@ -120,7 +124,7 @@ function draw() {
   if (bolha3 < 50) {
     bolha3 = 330;
   }
-
+```
   drawSprites();
 }
 
