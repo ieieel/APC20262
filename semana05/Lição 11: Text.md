@@ -1,5 +1,7 @@
 #Avaliação
-//var backdrop = createSprite(200,200);
+//
+``` javascript
+var backdrop = createSprite(200,200);
 backdrop.setAnimation("rainbow");
 var flyer = createSprite(200,200);
 flyer.setAnimation("wing_bot");
@@ -23,11 +25,13 @@ function draw() {
   }
   drawSprites();
 } 
-
+```
 Na avaliação da lição 11 eu adicionei os códigos condicionais com o keyDown para fazer o sprite se mover pela tela de animação.
 
 #Desafio
-// var peixe1 = createSprite(100, 150);
+//
+``` javascript
+var peixe1 = createSprite(100, 150);
 var peixe2 = createSprite(300, 250);
 var tartaruga = createSprite(200, 330);
 
@@ -123,5 +127,5 @@ function draw() {
 
   drawSprites();
 }
-
+```
 No desafio eu usei o código do aquário que eu fiz no desafio anterior e animei a tartaruga utilizando animações para cada movimento como na segunda parte do desafio e comandos de keyDown.
