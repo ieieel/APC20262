@@ -1,5 +1,7 @@
 #Avaliação
-//var backdrop = createSprite(200,200);
+//
+``` javascript
+var backdrop = createSprite(200,200);
 backdrop.setAnimation("sky");
 var creature = createSprite(200,250);
 creature.setAnimation("creature");
@@ -14,11 +16,13 @@ function draw() {
   text("Press the mouse to shake the creature.", 20, 50, 360, 100);  
   }
 }
-
+```
 Usando se/senão no desafio da lição 12 eu alterei o código para que o sprite se movesse quando o mouse estivesse pressionado e a instrução aparecesse na tela quando não estivesse pressionado.
 
 #Desafio
-//var foguete = createSprite(200, 300, 50, 80);
+//
+``` javascript
+var foguete = createSprite(200, 300, 50, 80);
 foguete.setAnimation("rocketo");
 foguete.scale = 0.2;
 var planeta = createSprite(100, 100, 80, 80);
@@ -103,5 +107,5 @@ function draw() {
     text("Seu presente chegou!", 105, 380);
   }
 }
-
+```
 No desafio que teve 5 partes, na ultima desenvolvi um cartão animado de aniversário usando condicionais, true/false e mouse input. 
