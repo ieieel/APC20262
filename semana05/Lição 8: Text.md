@@ -2,7 +2,7 @@
 // //1) Add the draw loop block to the bottom of this program.
 //2) Move any blocks that need to be inside the draw loop.
 
-
+``` javascript
 World.frameRate = 6;
 var salt = createSprite(200,200);
 salt.setAnimation("salt");
@@ -12,11 +12,12 @@ function draw() {
   salt.y = randomNumber(190,200);
   drawSprites();
 }
-
+```
 A avaliação da lição 8 pedia para adicionarmos o draw loop e mudar o sprite como estava na animação, no caso usando a rotação e mudandoo frame rate para se igualar.
 
 #Desafio
 //1º 
+``` javascript
 var sprite = createSprite(200,280);
 
 
@@ -89,9 +90,10 @@ text("It's a good day!", 70, 150, 177, 152);
   sprite.rotation = randomNumber(0,5);
   drawSprites();
 }
-
+```
 
 2º 
+``` javascript
 var sprite = createSprite(100,350);
 
 World.frameRate = 5;
@@ -114,5 +116,5 @@ rect(350,370, 20, 10);
   sprite.x = randomNumber(0,400);
   drawSprites();
 }
-
+```
 No desafio havia duas partes onde a primeira era para animar o sprite da cena da lição 7 utilizando o draw loop, e a segunda foi um free play.
