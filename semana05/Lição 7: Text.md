@@ -1,5 +1,7 @@
 #Avaliação
-// var grass = createSprite(200,200);
+//
+``` javascript
+var grass = createSprite(200,200);
 grass.setAnimation("floating_grass");
 var alien = createSprite(180,100);
 alien.setAnimation("alien");
@@ -12,11 +14,13 @@ textSize(15);
 fill('yellow');
 text("The butterflies are too colorfull.", 10, 275);
 text("Where am I going?", 250, 100);
-
+```
 A avaliação da lição 7 pedia para adicionarmos textos ao cenário já pronto, o que eu fiz nas linhas 13 e 14 mudando algumas caraterísticas do texto como tamanho e cor da letra.
 
 #Desafio
-//var sprite = createSprite(200,280);
+//
+``` javascript
+var sprite = createSprite(200,280);
 
 background('lightblue');
 fill('black');
@@ -84,5 +88,5 @@ strokeWeight(1);
 fill('black');
 textSize(15);
 text("It's a good day!", 70, 150, 177, 152);
-
+```
 A ultima lição contava com 4 etapas sendo a 3 apenas mudando códigos já prontos e a última criando um cenário com sprite do 0. 
