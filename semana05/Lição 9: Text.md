@@ -1,4 +1,5 @@
 #Avaliação
+``` javascript
 // var orangeFish = createSprite(400, randomNumber(0, 100));
 orangeFish.setAnimation("orange_fish");
 var blueFish = createSprite(250, randomNumber(0, 200));
@@ -18,11 +19,12 @@ function draw() {
   // Draw Animations
   drawSprites();
 }
-
+```
 A avaliação da lição 9 solicitava para que usando o counter pattern animássemos os peixes, o azul mais rápido e o verde mais lento.
 
 #Desafio
   //1º 
+ ``` javascript
   var orangeFish = createSprite(400, randomNumber(0, 100));
 orangeFish.setAnimation("orange_fish");
 var blueFish = createSprite(250, randomNumber(0, 200));
@@ -45,8 +47,9 @@ function draw() {
   // Draw Animations
   drawSprites();
 }
-
+```
 2º
+``` javascript
 var orangeFish = createSprite(400, randomNumber(0, 100));
 orangeFish.setAnimation("orange_fish");
 var blueFish = createSprite(250, randomNumber(0, 200));
@@ -95,8 +98,9 @@ function draw() {
   // Draw Animations
   drawSprites();
 } 
-
+```
 3º
+``` javascript
 var voar = 450;
 var sprite1 = createSprite(50, voar);
 var sprite2 = createSprite(100, voar);
@@ -169,6 +173,6 @@ sprite7.x = randomNumber(348,351);
 sprite7.y = sprite7.y - 2;
 drawSprites();  
 }
-
+```
 O desafio de 3 partes solicitava na primeira parte que fizéssemos os peixes tremerem enquanto se movimentavam, a segunda parte para adicionarmos bolhas a cena e para fazermos essas bolhas se movimentarem, e a 3º parte para utilizarmos todo o conjunto
 criando uma cena utilizando as animações aprendidas anteriormente. 
