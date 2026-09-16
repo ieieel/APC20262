@@ -124,8 +124,8 @@ function draw() {
   if (bolha3 < 50) {
     bolha3 = 330;
   }
-```
+
   drawSprites();
 }
-
+```
 Na primeira parte do desafio da lição 10 foi pedido que utilizando a função de condição e a visibilidade dos sprites alterássemos a animação, já na segunda parte foi uma animação livre.  
