@@ -77,12 +77,14 @@ alien.velocityY = 0;
 }
 
   }
-   
+ 
     drawSprites();
 }
 ```
-Na primeira parte do desafio utilizei o velocity X e Y para animar o alien da lição e passei um tempo tentando descobrir como fazer ele entrar em loop (era só repetir o primeiro 'if'.
+Na primeira parte do desafio utilizei o velocity X e Y para animar o alien da lição e passei um tempo tentando descobrir como fazer ele entrar em loop (era só repetir o primeiro 'if'. 
+
   // 2º
+  
   ```javascrip
 var backdrop = createSprite(200,200);
 var alien1 = createSprite(100,300);
