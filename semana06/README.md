@@ -1,1 +1,1 @@
-
+Nessa ultima semana de lições, eu aprendi mais sobre como programar com java voltado para a programação de jogos utilizando varios conceitos e comandos para fazer animações da forma mais fluida possível. Tive dificuldade utilizando as funções pois por mais que seja uma ferramenta pra organizar o trabalho acaba que pra minha mente autista fica ainda mais confuso colocar mais um código pra setorizar mais funções enquanto outras ficam soltas pelo código. 
